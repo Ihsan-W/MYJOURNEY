@@ -1,0 +1,312 @@
+
+section{
+    padding-top: 128px; 
+    position: relative;
+}
+
+section::before {
+    z-index: -1;
+    content: '';
+    font-size: 72px;
+    color: gray;
+    opacity: 0.25;
+    position: absolute;
+    font-weight: 700;
+    top: 10px;
+    left: -40px;
+}
+
+.navbar {
+    background-color: white;
+    box-shadow: 0 0 0 2px rgba(0,0, 0, 0.10);
+}
+
+
+#header .span1{
+    color:#5ce594;
+}
+
+/* .span1{
+    color:#5ce594;
+} */
+
+#header .span2{
+    color:#42b5db;
+}
+
+/* .span2{
+    color:#42b5db;
+} */
+
+
+
+#header img{
+    width: 30px;
+    margin: 0 10px 0 0;
+}
+
+
+#navbarNav a{
+    color: #20c17b;
+    font-weight: 600;
+    padding: 8px 0;
+    margin: 0 0 0 30px;
+    transition: all;
+    transition-duration: 300ms;
+}
+
+#navbarNav a:hover{
+    color: #42b5db;
+    border-bottom:3px solid #42b5db ;
+    
+}
+
+.container #header{
+    margin: 0;
+    animation: 2s upDown infinite
+}
+
+
+
+/* ------------------------------------------ */
+/* DIBAWAH SESI 1 */
+
+
+
+.btn.button {
+    border: 3px solid #5ce594;
+    border-radius: 50px;
+    padding: 5px 16px;
+    color: #0e9590;
+}
+
+.btn.button:hover, .btn.button.active{
+    border: 3px solid #5ce594;
+    background-color: #5ce594;
+    color: white;
+}
+
+
+
+/* ------------------------------------------ */
+
+/* DIBAWAH SESI 2 */
+
+section{
+    padding-top: 128px;
+    position: relative;
+}
+
+
+#home {
+    margin-bottom: 0px !important; /* Atur sesuai kebutuhan */
+    padding-bottom: 0px !important;
+}
+
+
+#home .key{
+    color: #259179;
+}
+
+.home .arrow img{
+    width: 60px;
+    margin-bottom: 50px !important;
+    padding-bottom: 50px !important;
+    }
+    
+    #arrow{
+        animation: 2s upDown infinite;
+    }
+
+    @keyframes upDown{
+        0% {
+            transform: translateY(0);
+        }
+        50% {
+            transform: translateY(10px);
+        }
+        100%{
+            transform: translateY(0);
+        }
+    }
+
+    .about-exp-item-detail{
+        display: none;
+    }
+
+    .about-exp-item .justify-text {
+        text-align: justify;
+      }
+      
+
+
+/* mengatur responsive */
+
+/* dibawah untuk mengatur responsive foto profil, diatur widht 100% agar ketika diperkecil gambar akan ikut mengecil */
+.home img{
+    width: 100%;
+}
+
+/*untuk mengatur posisi teks pada bagian kontak sosmed agar tidak berantakan atau turun sebagian ke bawah sehingga pada html ditambahkan grid sistem menggunakan col"
+
+/* untuk mengatur gambar profil jadi responsiv, maka kita atur saat layarnya diatas >76bpx (md) maka kita buat 100% widhtnya, dan dibawah ukuran layar tersebut kita perkecil */
+@media only screen and (max-widht:768px){
+    .home img{
+        width: 50%;
+    }
+}  
+
+ /* ------------------------------------------ */
+
+
+/* DIBAWAH SESI 3 (carousel) */
+
+#slider {
+    margin-top: -60px;
+}
+
+.slider::before{
+    content: 'Whats On';
+    margin-bottom: -128px !important;
+    padding-bottom: -128px !important;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 500px; /* Sesuai tinggi yang diinginkan */
+    object-fit: contain; /* Memastikan gambar tetap proporsional tanpa gepeng */
+}
+
+/* 🔹 Media query untuk layar kecil (mobile & tablet) */
+@media (max-width: 768px) {
+    .carousel-item img {
+        height: 300px; /* Kurangi tinggi agar pas di layar kecil */
+        margin-top: -148px;
+    }
+
+    .slider::before{
+        content: 'Whats On';
+        left: -30px;
+        margin-bottom: -128px !important;
+        padding-bottom: -128px !important;
+        font-size: 64px;
+    }
+}
+
+
+ /* ------------------------------------------ */
+
+
+/* DIBAWAH SESI 4 (aboutme) */
+
+.about::before{
+    content: 'About Me';
+}
+
+.academic-header h5{
+    color: #1b35a5;
+    margin: 0 3px 15px 0;
+    font-size: 18px;
+}
+
+.garisvertikal{
+    padding: 20px 1px;
+    background-color: #e53636;
+    width: 3px;
+    height: 40px;
+}
+
+.academic-header img{
+    margin: 0 3px 15px 0;
+}
+
+.about-academic-item-detail{
+    display: none;
+}
+
+
+ /* ------------------------------------------ */
+
+
+/* DIBAWAH SESI 5 (work experience) */
+
+.experience::before{
+    content: 'Experiences';
+}
+
+.work-header h5{
+    color: #1b35a5;
+    margin: 0 3px 15px 0;
+    font-size: 18px;
+}
+
+.work-header img{
+    margin: 0 3px 15px 0;
+}
+
+.work-header {
+    display: flex;
+    align-items: center; /* Pusatkan vertikal */
+}
+
+.work-header img {
+    width: 80px; /* Samakan ukuran logo */
+    object-fit: contain;
+}
+
+.garisvertikal {
+    width: 2px;
+    height: 40px; /* Sesuaikan tinggi garis vertikal */
+    background-color: red;
+}
+
+.work-header h5 {
+    margin: 0;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+@media (max-width: 768px){
+    .work-header .logobappeda {
+        margin-top: 10px;
+    }
+
+    .experiencesitem2{
+        margin-top: 0px;
+    }
+
+    .experiencesitem3{
+        margin-top: 40px;
+    }
+}
+
+
+ /* ------------------------------------------ */
+
+
+/* DIBAWAH SESI 6 (publication) */
+
+.publication::before{
+    content: 'Publications';
+}
+
+.card-img-top {
+    width: 100%;        /* Gambar memenuhi lebar card */
+    height: 200px;      /* Atur tinggi gambar agar seragam */
+    object-fit: cover;  /* Memastikan gambar tidak terdistorsi */
+  }
+  
+ /* ------------------------------------------ */
+
+
+/* DIBAWAH SESI 7 (expertise) */
+
+.expertise::before{
+    content: 'Expertise';
+}
+
+
+ /* ------------------------------------------ */
+
+/* DIBAWAH SESI 8 (connect) */
+

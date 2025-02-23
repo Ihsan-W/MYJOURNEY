@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Journey Portofolio</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <!-- SESI NAVBAR (KE-1)-->
+    <nav class="navbar navbar-expand-lg sticky-top sticky-lg-top sticky-md-top">
+        <div class="container sticky-sm-top">
+            <div id="header" class="d-flex justify-content-start align-items-center">
+                <img src="FOTO/tumbuh.png" alt="">
+                <a class="navbar-brand fs-4 fw-bold" href="#"><span class="span1">My</span><span class="span2">Journey</span></a>
+            </div>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ms-auto">
+              <li class="nav-item">
+                <a class="nav-link" href="#home">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#about">About Me</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#experience">Experience</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#publication">Publication</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#expertise">Expertise</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link p" href="#connect">Let's Connect!</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </nav>
+
+      <!-- SESI PROFIL (KE 2) -->
+    <section id="home" class="home container">
+      <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
+          <div class="about-exp-item col-12 col-md-8">
+            <div class="about-exp-item-header" >
+                <h3 class="fw-semibold"><span class="span1">Greetings !</span> <span class="span2">I am</span></h3>
+                <h1 class="fw-bold">Muhammad Ihsan Akbar</h1>
+                <p>
+                an <b>Urban & Regional Planner</b> based in Karawang, Indonesia
+                </p>
+                <p class="fst-italic key fw-semibold "> GIS Analyst | Macroeconomic Analyst | Front End Developer Enthusiast</p>
+                <button class="btn button" onclick="toggleDetail(event)">Personalization</button>
+                <a class="btn button me-3" href="CV/CV - Muhammad Ihsan Akbar.pdf"download><i>MY Curriculum VItae (CV)</i></a>
+            </div>
+            <p class="about-exp-item-detail col-12 col-md-8 justify-text">
+              Recent graduate in Urban and Regional Planning, with a strong enthusiasm and valuable research experience in urban spatial analyst  and macroeconomic analyst, focusing on both implementation and oversight. Possesses technical expertise in utilizing ArcGIS, AutoCAD, IBM SPSS, Expert Choice, and Microsoft Excel to enhance data-driven decision-making. Demonstrates a strong work ethic and excels in building relationships, effective communication and teamwork, adopts a systematic and comprehensive approach, passion for continuous learning, consistently striving to improve service performance and stakeholder satisfaction.
+            </p>
+          </div>
+          <div class="col-12 col-md-4 d-flex justify-content-md-end justify-content-center">
+            <img src="FOTO/foto profil fix.png" alt="potrait">
+          </div>
+      </div>
+      <a href="#about" class="text-decoration-none arrow w-100 d-flex align-items-center flex-column mt-5">
+        <div class="text-dark">More Info</div>
+        <img id="arrow" class="mt-2 mb-5" src="FOTO/arrow.svg" alt="arrow icon">
+      </a>
+    </section>
+
+      <!-- SESI CAROUSEL (KE 3) -->
+    <section id="slider" class="slider container mt-n7 mt-md-n3">
+      <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
+        <div class="carousel-indicators">
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+          <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+        </div>
+        <div class="carousel-inner">
+          <div class="carousel-item active" data-bs-interval="10000">
+            <img src="ARTICLE/1.png" class="d-block w-100" alt="..." style="height: 500px;"">
+          </div>
+          <div class="carousel-item" data-bs-interval="2000">
+            <img src="ARTICLE/2.png" class="d-block w-100" alt="..." style="height: 500px;"">
+          </div>
+          <div class="carousel-item">
+            <img src="ARTICLE/3.png" class="d-block w-100" alt="..." style="height: 500px;"">
+          </div>
+        </div>
+        <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+
+    <!-- SESI ABOUT ME (KE 4) -->
+    <section id="about" class="about container">
+      <div class="academic-header d-flex align-items-center">
+        <img  class="me-3" style="width: 80px;" src="FOTO/ITSB.png" alt="">
+        <div class="garisvertikal"></div>
+        <h5 class="ITSB ms-3 m-0 ">INSTITUT TEKNOLOGI SAINS BANDUNG</h5>
+      </div>
+      <div class="about-exp-item">
+        <div class="about-exp-item-header">
+             <div>
+                 <h5 class="fs-6 mt-1">Urban and Regional Planning</h5>
+                 <p>March 2020 - July 2024 | GPA (3.86)</p>
+             </div>
+             <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+        </div>
+        <p class="about-exp-item-detail">Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi magni, ab nihil quaerat totam dolore suscipit a inventore blanditiis nisi assumenda doloremque dignissimos quasi eaque sapiente voluptates officiis quas? Obcaecati?</p>
+     </div>
+    </section>
+
+    <!-- SESI WORK EXPERIENCE (KE 5) -->
+
+    <section id="experience" class="experience container">
+      <div class="row d-flex align-items-center flex-md-row">
+        <div class="experiencesitem1 col-12 col-md-4 ">
+          <div class="work-header d-flex align-items-center">
+            <img  class="me-3 logo"src="FOTO/ITSB.png" alt="">
+            <div class="garisvertikal"></div>
+            <h5 class="ITSB ms-3 m-0 ">INSTITUT TEKNOLOGI SAINS BANDUNG</h5>
+          </div>
+          <div class="about-exp-item">
+            <div class="about-exp-item-header">
+                 <div>
+                     <h5 class="fs-6 mt-1">Assistant Staff Research</h5>
+                     <p>| November - December 2024</p>
+                 </div>
+                 <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+            </div>
+            <ul class="about-exp-item-detail">
+            Been a part of KLHS Kabupaten Sarmi (Kajian Lingkungan Hidup Strategis) team planner, especially in scope of responsibility :
+                <li class="ms-5">Profil Daya Dukung dan Daya Tampung Lingkungan Hidup</li>  
+                <li class="ms-5">Hasil Kajian Muatan KLHS</li>   
+            </ul>
+          </div>
+        </div>
+
+        <div class="experiencesitem2 col-12 col-md-4">
+          <div class="work-header d-flex align-items-center mt-4">
+            <img  class="me-3 logo" src="FOTO/ITSB.png" alt="">
+            <div class="garisvertikal"></div>
+            <h5 class="ITSB ms-3 m-0 ">INSTITUT TEKNOLOGI SAINS BANDUNG</h5>
+          </div>
+          <div class="about-exp-item">
+            <div class="about-exp-item-header">
+                 <div>
+                     <h5 class="fs-6 mt-1">Team Leader of KSP Sukabumi Bagian Selatan at Hantaru (Hari Tata Ruang) West Java Infographic Competition 2024</h5>
+                     <p>| October 2024</p>
+                 </div>
+                 <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+            </div>
+            <p class="about-exp-item-detail">Been a part of 5 best infographic nominee at the competition </p>
+          </div> 
+        </div>
+
+        <div class="experiencesitem3 col-12 col-md-4">
+          <div class="work-header d-flex align-items-center mt-9">
+            <img  class="me-3 logobappeda" style="width: 35px; margin-bottom: 4px;" src="FOTO/logo kab.karawang.png" alt="">
+            <div class="garisvertikal"></div>
+            <h5 class="ITSB ms-3 m-0 ">BADAN PERENCANAAN PEMBANGUNAN DAERAH (BAPPEDA) KAB. KARAWANG</h5>
+          </div>
+          <div class="about-exp-item">
+            <div class="about-exp-item-header">
+                 <div>
+                     <h5 class="fs-6 mt-4">Staff Intern at Research and Development Department </h5>
+                     <p>| June - August 2023</p>
+                 </div>
+                 <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+            </div>
+            <ul class="about-exp-item-detail">Been a researcher in scope of regional Industry Development plan, especially contribute in scope of :
+              <li class="ms-5 col-9" style="text-align: ju;">
+                Classify regional industrial businesses into large, medium, and small categories in accordance with Permendagri No. 64/2016, to enhance the efficiency and optimization of regional industrial policy implementation
+              </li>
+              <li class="ms-5 col-9" style="text-align: ju;">
+                Identify disparities in the added value contributions of small and medium enterprises compared to large industries, as a basis for evaluating the performance of the regional industrial sector, particularly in the context of Rencana Pembangunan Industri Kabupaten (RPIK) Karawang
+              </li>
+              <li class="ms-5 col-9" style="text-align: ju;">
+                Conduct an analysis of the region's leading industrial sectors utilizing methods such as Location Quotient, Shift Share Analysis, Klassen Typology, and InputOutput Analysis
+              </li>
+              <li class="ms-5 col-9" style="text-align: ju;">
+                Create a layout map for industrial and agricultural areas employing ArcGIS software
+              </li>
+              <li class="ms-5 col-9" style="text-align: ju;">
+                Contribute to the production of scientific articles for publication in the Karawang Scientific Journal, overseen by Badan Perencanaan Pembangunan Daerah Kabupaten Karawang
+              </li>
+            </ul>
+          </div> 
+        </div>
+      </div>
+
+      <!-- ini pembatas antara exp kerja dengan organisasi -->
+
+      <div class="garis container" style="border: 1px solid #979797; margin-top: 80px; margin-bottom: 80px;"></div>
+
+      <!-- ini pembatas antara exp kerja dengan organisasi -->
+
+
+      <div class="row d-flex align-items-center flex-md-row">
+
+        <div class="experiencesitem1 col-12 col-md-4 mt-md-2 mb-5">
+          <div class="work-header d-flex align-items-center">
+            <img class="me-3 mb-1" style="width: 50px;" src="FOTO/hmpwk.jpeg" alt="">
+            <div class="garisvertikal"></div>
+            <h5 class="ITSB ms-3 m-0 ">Himpunan Mahasiswa Perencanaan Wilayah dan Kota (HMPWK) ITSB</h5>
+          </div>
+          <div class="about-exp-item">
+            <div class="about-exp-item-header">
+                 <div>
+                     <h5 class="fs-6 mt-1">Staff of the Human Resource Potential Development Department</h5>
+                     <p>| January 2023 - 2024</p>
+                 </div>
+                 <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+            </div>
+            <p class="about-exp-item-detail col-10" style="text-align: justify;">Been a part of cadre framework maker for academic and non-academic activities</p>
+          </div>
+        </div>
+
+        <div class="experiencesitem1 col-12 col-md-4 mt-md-2 mb-5">
+          <div class="work-header d-flex align-items-center mt-md-2">
+            <img class="me-3 mb-1" style="width: 50px;" src="FOTO/hmpwk.jpeg" alt="">
+            <div class="garisvertikal"></div>
+            <h5 class="ITSB ms-3 m-0 ">Himpunan Mahasiswa Perencanaan Wilayah dan Kota (HMPWK) ITSB</h5>
+          </div>
+          <div class="about-exp-item">
+            <div class="about-exp-item-header">
+                 <div>
+                     <h5 class="fs-6 mt-1">Head of Education and Profession Department</h5>
+                     <p>| January 2022 - 2023</p>
+                 </div>
+                 <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+            </div>
+            <p class="about-exp-item-detail col-10" style="text-align: justify;">Been a leader of department in managing any  department's work program and directly involved as an event implementer for the ArcGIS basic training workshop for cadre activities</p>
+          </div> 
+        </div>
+
+        <div class="experiencesitem1 col-12 col-md-4 mt-md-2 mb-5">
+          <div class="work-header d-flex align-items-center mt-md-2">
+            <img class="me-3 mb-1" style="width: 50px;" src="FOTO/hmpwk.jpeg" alt="">
+            <div class="garisvertikal"></div>
+            <h5 class="ITSB ms-3 m-0 ">Himpunan Mahasiswa Perencanaan Wilayah dan Kota (HMPWK) ITSB</h5>
+          </div>
+          <div class="about-exp-item">
+            <div class="about-exp-item-header">
+                 <div>
+                     <h5 class="fs-6 mt-1">Staff of Education and Profession Department</h5>
+                     <p>| January 2021 - 2022</p>
+                 </div>
+                 <button class="btn button" onclick="toggleDetail(event)">More Info</button>
+            </div>
+            <p class="about-exp-item-detail col-10" style="text-align: justify;">Been a part in responsibility for making and managing a framework for the Ruang Plano podcast as a forum for sharing information on experiences of studio field lectures and student internships</p>
+          </div> 
+        </div>
+
+        
+      </div>
+
+      
+    </section>
+
+    <!-- SESI PUBLICATION (KE 6) -->
+     <section id="publication" class="publication container">
+      <div class="row">
+
+        <div class="col-sm-6">
+          <div class="card d-flex flex-column h-100">
+            <div class="card-body flex-grow-1">
+              <img src="ARTICLE (CARD)/1.png" class="card-img-top" alt="">
+              <h5 class="card-title mt-3" style="font-size: 14px;text-align: justify;">Analysis of Linkage Economy Between the Agricultural Sector and the Manufacturing Industry in the Economy of Karawang Regency Using the Input-Output Analysis Method</h5>
+              <p class="card-text" style="font-size: 13px;"><b>Keywords :</b> Input-Output, Economic Linkages, Karawang</p>
+              <p class="card-text" style="font-size: 13px;"><b>Publisher : </b>JIKA (Jurnal Ilmiah Karawang) own by BAPPEDA Karawang</p>
+              <a href="https://jika.karawangkab.go.id/index.php/jika/article/view/95" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Get it!</a>
+            </div>
+            <div class="iconsoftware d-flex align-items-center p-2 container mt-n5" style="background-color: #83f5d8;">
+              <p style="font-size: 12px;" class="container fw-semibold mt-1 mb-0"><i>In related software expertise</i></p>
+              <img class="img-fluid me-2" style="width: 30px; color: #3e376b;" src="FOTO/ms word.png" alt="">
+              <img class="img-fluid" style="width: 30px;" src="FOTO/ms excel.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6">
+          <div class="card d-flex flex-column h-100">
+            <div class="card-body flex-grow-1" style="padding: ;">
+              <img src="ARTICLE (CARD)/2.png" class="card-img-top" alt="">
+              <h5 class="card-title mt-3" style="font-size: 14px;text-align: justify;">Suitability Analysis of Industrial Designated Area Locations Based on Land Capability Class in Karawang Regency</h5>
+              <p class="card-text" style="font-size: 13px;"><b>Keywords :</b> Industry, Location, Conformity Analysis , Karawang</p>
+              <p class="card-text" style="font-size: 13px;"><b>Publisher : </b>JIKA (Jurnal Ilmiah Karawang) own by BAPPEDA Karawang</p>
+              <a href="https://jika.karawangkab.go.id/index.php/jika/article/view/41" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Get it!</a>
+            </div>
+            <div class="iconsoftware d-flex align-items-center p-2 container mt-n5" style="background-color: #83f5d8;">
+              <p style="font-size: 12px;" class="container fw-semibold mt-1 mb-0"><i>In related software expertise</i></p>
+              <img class="img-fluid me-2" style="width: 30px; color: #3e376b;" src="FOTO/ms word.png" alt="">
+              <img class="img-fluid me-2" style="width: 30px;" src="FOTO/ms excel.png" alt="">
+              <img class="img-fluid" style="width: 30px;" src="FOTO/arcgis.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 mt-4">
+          <div class="card d-flex flex-column h-100">
+            <div class="card-body flex-grow-1">
+              <img src="ARTICLE (CARD)/3.png" class="card-img-top" alt="">
+              <h5 class="card-title mt-3" style="font-size: 14px;text-align: justify;">Analysis of Vehicle Exhaust Emission Test Regulations Based on Their Effect on the Air Quality Index in DKI Jakarta Using Pearson Correlation and Linear Regression Methods</h5>
+              <p class="card-text" style="font-size: 13px;"><b>Keywords :</b> Vehicles, Exhaust Emissions, ISPU, Air Quality, Pearson Correlation, Linear Regression</p>
+              <p class="card-text" style="font-size: 13px;"><b>Publisher : </b>J Statistika Universitas PGRI Adi Buana Surabaya</p>
+              <a href="https://jurnal.unipasby.ac.id/index.php/jstatistika/article/view/5216" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Get it!</a>
+            </div>
+            <div class="iconsoftware d-flex align-items-center p-2 container mt-n5" style="background-color: #83f5d8;">
+              <p style="font-size: 12px;" class="container fw-semibold mt-1 mb-0"><i>In related software expertise</i></p>
+              <img class="img-fluid me-2" style="width: 30px; color: #3e376b;" src="FOTO/ms word.png" alt="">
+              <img class="img-fluid" style="width: 30px;" src="FOTO/ms excel.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 mt-4">
+          <div class="card d-flex flex-column h-100">
+            <div class="card-body flex-grow-1">
+              <img src="ARTICLE (CARD)/4.png" class="card-img-top" alt="">
+              <h5 class="card-title mt-3" style="font-size: 14px;text-align: justify;">KSP Sukabumi Bagian Selatan : Fisheries & Tourism Synergy in Integrated Coastal Area Planning for a Sustainable Future</h5>
+              <p class="card-text" style="font-size: 13px;"><b>Been a part of 5 best infographic nominee</b> at Hantaru Jabar competition held by Dinas Bina Marga dan Penataan Ruang 2024</p>
+              <p class="card-text" style="font-size: 13px;"><b>Held Organizer : </b>Dinas Bina Marga dan Penataan Ruang Prov. Jawa Barat</p>
+              <a href="https://drive.google.com/file/d/14_qc2qpeLGHcMrq6RVh8T2pQi-eu5n76/view?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Get it!</a>
+            </div>
+            <div class="iconsoftware d-flex align-items-center p-2 container mt-n5" style="background-color: #83f5d8;">
+              <p style="font-size: 12px;" class="container fw-semibold mt-1 mb-0"><i>In related software expertise</i></p>
+              <img class="img-fluid me-2" style="width: 30px; color: #3e376b;" src="FOTO/canva.png" alt="">
+              <img class="img-fluid" style="width: 30px;" src="FOTO/ms excel.png" alt="">
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-6 mt-4">
+          <div class="card d-flex flex-column h-100">
+            <div class="card-body flex-grow-1">
+              <img src="ARTICLE (CARD)/5.png" class="card-img-top" alt="">
+              <h5 class="card-title mt-3" style="font-size: 14px;text-align: justify;">AutoCAD Course for Beginner & Intermediate Final Assigntment Held by Arsisten Indonesia</h5>
+              <p class="card-text" style="font-size: 13px;"><b>Been a participant AutoCAD course</b></p>
+              <p class="card-text" style="font-size: 13px;"><b>Held Organizer : </b>Arsisten Indonesia</p>
+              <div class="d-flex align-items-center gap-1">
+                <a href="https://drive.google.com/file/d/14_qc2qpeLGHcMrq6RVh8T2pQi-eu5n76/view?usp=sharing" class="btn btn-primary" target="_blank" rel="noopener noreferrer">Get it!</a>
+                <a href="https://drive.google.com/file/d/1ddhN1hPLct0At765UAKQJ5zpzXyU77Ij/view?usp=sharing" class="btn btn-dark" target="_blank" rel="noopener noreferrer">Certificate Course</a>
+              </div>
+            </div>
+            <div class="iconsoftware d-flex align-items-center p-2 container mt-n5" style="background-color: #83f5d8;">
+              <p style="font-size: 12px;" class="container fw-semibold mt-1 mb-0"><i>In related software expertise</i></p>
+              <img class="img-fluid me-2" style="width: 50px; color: #3e376b;" src="FOTO/autocad.png" alt="">
+            </div>
+          </div>
+        </div>
+
+      </div>
+     </section>
+
+     <!-- SESI EXPERTISE (KE 7) -->
+     <section id="expertise" class="expertise container mt-5">
+        <div id="expertise" class="row d-flex align-items-center flex-md-row">
+            <div class="col-3">
+              <img src="FOTO/ms word.png" style="width: 70px;" alt="">
+              <p style="font-size: 12px;text-align: center;" class="col-2 col-md-2">Microsoft Word</p>
+            </div>
+            <div class="col-3">
+              <img src="FOTO/ms excel.png" style="width: 70px;" alt="">
+              <p style="font-size: 12px;text-align: center;" class="col-2 col-md-2">Microsoft Excel</p>
+            </div>
+            <div class="col-3">
+              <img src="FOTO/arcgis.png" style="width: 80px;" alt="">
+              <p style="font-size: 12px;text-align: center;" class="col-2 col-md-2">ArcGIS</p>
+            </div>
+            <div class="col-3">
+              <img src="FOTO/autocad.png" style="width: 120px;" alt="">
+              <p style="font-size: 12px;text-align: center;" class="col-2 col-md-2">AutoCAD</p>
+            </div>
+            <div class="col-3">
+              <img src="FOTO/canva.png" style="width: 60px;" class="ms-5" alt="">
+              <p style="font-size: 12px;text-align: center;" class="col-2 col-md-2"></p>
+            </div>
+            <div class="col-2">
+              <img src="FOTO/html.png" style="width: 80px;" alt="">
+              <p style="font-size: 12px;text-align: center;" class="col-2 col-md-2"></p>
+            </div>
+            <div class="col-2">
+              <img src="FOTO/css.png" style="width: 80px;" alt="">
+              <p style="font-size: 12px;text-align: center;" class="col-2 col-md-2"></p>
+            </div>
+            <div class="col-2">
+              <img src="FOTO/javascript.png" style="width: 80px;" alt="">
+              <p style="font-size: 12px;text-align: center;" class="col-2 col-md-2"></p>
+            </div>
+            <div class="col-2">
+              <img src="FOTO/jquery.png" style="width: 80px;" alt="">
+              <p style="font-size: 12px;text-align: center;" class="col-2 col-md-2"></p>
+            </div>
+        </div>
+
+     </section>
+
+     <!-- SESI LETS CONNECT (KE 8) -->
+      <section id="connect" class="Connect p-5 pt-2 mt-5" style="background-color:#c8ffde;">
+        <h3 style="font-size: 72px; color: #071853; font-weight: 700; top:-5px; left: -40px;">Let's Connect</h3>
+        <h5 style="color: #154c77;">
+          Greetings!, thank you for visiting my personal website. I am happy to open to any party to establish connections in any field.
+        </h5>
+        <div class="row d-flex align-items-center flex-md-row mt-5">
+          <div class="col-4 col-md-4 text-center">
+            <img src="FOTO/email.png" style="width: 60px;" alt="">
+            <p class="text-center fw-semibold" style="font-size: 13px;">ihsanakbar0810@gmail.com</p>
+          </div>
+          <div class="col-4 col-md-4 text-center">
+            <img src="FOTO/linkedin.png" style="width: 40px;" alt="">
+            <br>
+            <a href="https://www.linkedin.com/in/muhammad-ihsan-akbar/
+            " target="_blank" rel="noopener noreferrer" class="text-center fw-semibold" style="text-decoration: none; color: black;font-size: 13px;">Muhammad Ihsan Akbar</a>
+          </div>
+          <div class="col-4 col-md-4 text-center">
+            <img src="FOTO/phone.png" style="width: 40px;" alt="">
+            <p class="text-center fw-semibold" style="font-size: 13px;">+6282111474571</p>
+          </div>
+
+        </div>
+        
+      </section>
+
+
+
+
+
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js" integrity="sha256-/JqT3SQfawRcv/BIHPThkBvs0OEvtFFmqPF/lYI/Cxo=" crossorigin="anonymous"></script>
+
+    <script src="main.js"></script>
+
+
+
+</body>
+</html>
