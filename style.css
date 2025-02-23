@@ -1,11 +1,10 @@
 html, body {
-    overflow-x: hidden; /* Mencegah scroll horizontal */
+    overflow-x: hidden ; Mencegah scroll horizontal
     width: 100%;
 }
 
 
-
-ection{
+section{
     padding-top: 128px; 
     position: relative;
 }
@@ -76,7 +75,6 @@ section::before {
 
 /* ------------------------------------------ */
 /* DIBAWAH SESI 1 */
-
 
 
 .btn.button {
@@ -192,7 +190,7 @@ section{
 
     .slider::before{
         content: 'Whats On';
-        left: -30px;
+        left: -10px;
         margin-bottom: -128px !important;
         padding-bottom: -128px !important;
         font-size: 64px;
