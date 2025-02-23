@@ -1,5 +1,11 @@
+html, body {
+    overflow-x: hidden; /* Mencegah scroll horizontal */
+    width: 100%;
+}
 
-section{
+
+
+ection{
     padding-top: 128px; 
     position: relative;
 }
@@ -13,7 +19,7 @@ section::before {
     position: absolute;
     font-weight: 700;
     top: 10px;
-    left: -40px;
+    left: -10px;
 }
 
 .navbar {
