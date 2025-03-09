@@ -9,7 +9,7 @@
 </head>
 <body>
     <!-- SESI NAVBAR (KE-1)-->
-    <!-- dibawah adalah kode navbar. disini digunakan kode fixed-top agar navbar tetap permanen di atas dan selalu terbawa saat discroll -->
+    <!-- dibawah adalah kode navbar. disini digunakan kode fixed-top agar navbar tetap permanen di atas dan selalu terbawa saat discroll. justify content start adalah posisi jarak horizontal yang dimulai dari kiri karena namanya start. -->
 
 
     <nav class="navbar navbar-expand-lg fixed-top" >
@@ -47,10 +47,9 @@
       </nav>
 
       <!-- SESI PROFIL (KE 2) -->
-      <!-- dibawah adalah kode sesi home. digunakan container fluid agar sesi tersebut menutup layar penuh (tidak ada sisa ruang). digunakan kode row = baris, d-flex = menjadikan posisi setiap elemen anakan ke samping, flex-md-row = memosisikan anakan ke samping saat ukuran layar >768px, flex-columnn-reverse = memosisikan anakan menjadi ke bawah saat ukuran layar dibawah 768px dengan posisi yang dibalik (reverse) yaitu gambarnya dulu baru teks -->
+      <!-- dibawah adalah kode sesi home. digunakan container bukan fluid agar sesi tersebut tidak menutup layar secara penuh (menyisakan sisa ruang). digunakan kode row = baris, d-flex = menjadikan posisi setiap elemen anakan ke samping, flex-md-row = memosisikan anakan ke samping saat ukuran layar >768px, flex-columnn-reverse = memosisikan anakan menjadi ke bawah saat ukuran layar dibawah 768px dengan posisi yang dibalik (reverse) yaitu gambarnya dulu baru teks -->
 
-
-    <section id="home" class="home container-fluid">
+    <section id="home" class="home container">
       <div class="row d-flex align-items-center flex-md-row flex-column-reverse">
           <div class="about-exp-item col-12 col-md-8">
             <div class="about-exp-item-header" >
@@ -80,7 +79,7 @@
       <!-- SESI CAROUSEL (KE 3) -->
     <!-- dibawah adalah sesi carousel. digunakan kode carousel bootsrap 5 berikut. kode container-fluid agar isi konten terisi penuh tidak ada sisa ruang kosong, mt-n7 = margin atas dikurangi 7 (atau dinaikin) saat layar diukuran kecil, mt-md-n3 margin atas dikurangi 3 (atau dinaikin) saat ukuran layar besar. detilnya cek di css. -->
     
-    <section id="slider" class="slider container-fluid mt-n7 mt-md-n3">
+    <section id="slider" class="slider container mt-n7 mt-md-n3">
       <div id="carouselExampleDark" class="carousel carousel-dark slide" data-bs-ride="carousel">
         <div class="carousel-indicators">
           <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
@@ -111,7 +110,7 @@
 
     <!-- SESI ABOUT ME (KE 4) -->
      <!-- dibawah sesi about me. digunakan kode d-flex=agar konten menyamping, align-items-center=agar konten berada di titik seimbang tengah. fs= adalah kode font sizenya bootsrap, mt = kode margin atas -->
-    <section id="about" class="about container-fluid">
+    <section id="about" class="about container">
       <div class="academic-header d-flex align-items-center">
         <img  class="me-3" style="width: 80px;" src="FOTO/ITSB.png" alt="">
         <div class="garisvertikal"></div>
@@ -132,7 +131,7 @@
     <!-- SESI WORK EXPERIENCE (KE 5) -->
      <!-- dibawah kode work, row=baris (saat layar kecil), d-flex=konten dibuat menyamping, align-items-center=konten diatur ke posisi tengah, flex-md-row=konten dibuat baris (menyamping) saat layar penuh -->
 
-    <section id="experience" class="experience container-fluid">
+    <section id="experience" class="experience container">
       <div class="row d-flex align-items-center flex-md-row">
         <div class="experiencesitem1 col-12 col-md-4 ">
           <div class="work-header d-flex align-items-center">
@@ -279,7 +278,7 @@
     </section>
 
     <!-- SESI PUBLICATION (KE 6) -->
-     <section id="publication" class="publication container-fluid">
+     <section id="publication" class="publication container">
       <div class="row">
 
         <div class="col-sm-6">
@@ -299,7 +298,7 @@
           </div>
         </div>
 
-        <div class="col-sm-6">
+        <div class="col-sm-6 mt-4">
           <div class="card d-flex flex-column h-100">
             <div class="card-body flex-grow-1">
               <img src="ARTICLE (CARD)/2.png" class="card-img-top" alt="">
@@ -375,23 +374,23 @@
 
      <!-- SESI EXPERTISE (KE 7) -->
       <!-- dibawah kode work, row=baris (saat layar kecil), d-flex=konten dibuat menyamping, align-items-center=konten diatur ke posisi tengah, flex-md-row=konten dibuat baris (menyamping) saat layar penuh -->
-     <section id="expertise" class="expertise container-fluid mt-5">
+     <section id="expertise" class="expertise container mt-5">
         <div id="expertise" class="row d-flex align-items-center flex-md-row">
             <div class="col-3">
               <img src="FOTO/ms word.png" style="width: 70px;" alt="">
-              <p style="font-size: 12px;text-align: center;" class="col-2 col-md-2">Microsoft Word</p>
+              <p style="font-size: 12px;text-align: center;" class="col-2 col-md-2"></p>
             </div>
             <div class="col-3">
               <img src="FOTO/ms excel.png" style="width: 70px;" alt="">
-              <p style="font-size: 12px;text-align: center;" class="col-2 col-md-2">Microsoft Excel</p>
+              <p style="font-size: 12px;text-align: center;" class="col-2 col-md-2"></p>
             </div>
             <div class="col-3">
               <img src="FOTO/arcgis.png" style="width: 80px;" alt="">
-              <p style="font-size: 12px;text-align: center;" class="col-2 col-md-2">ArcGIS</p>
+              <p style="font-size: 12px;text-align: center;" class="col-2 col-md-2"</p>
             </div>
             <div class="col-3">
               <img src="FOTO/autocad.png" style="width: 120px;" alt="">
-              <p style="font-size: 12px;text-align: center;" class="col-2 col-md-2">AutoCAD</p>
+              <p style="font-size: 12px;text-align: center;" class="col-2 col-md-2"></p>
             </div>
             <div class="col-3">
               <img src="FOTO/canva.png" style="width: 60px;" class="ms-5" alt="">
@@ -418,30 +417,30 @@
      </section>
 
      <!-- SESI LETS CONNECT (KE 8) -->
-      <section id="connect" class="Connect p-5 pt-2 mt-5" style="background-color:#c8ffde;">
-        <h3 style="font-size: 72px; color: #071853; font-weight: 700; top:-5px; left: -40px;">Let's Connect</h3>
-        <h5 style="color: #154c77;">
+      <section id="connect" class="Connect p-5 pt-2 mt-5 container-fluid" style="background-color:#c8ffde;">
+        <div class="container contact row d-flex align-items-center justify-content-between flex-md-row mt-5">
+          <h3 style="font-size: 72px; color: #071853; font-weight: 700; top:-5px; left: -40px;">Let's Connect</h3>
+          <h5 style="color: #154c77;" class="mt-3">
           Greetings!, thank you for visiting my personal website. I am happy to open to any party to establish connections in any field.
-        </h5>
-        <div class="contact row d-flex align-items-center justify-content-between flex-md-row mt-5">
-          <div class="col-4 col-md-4 text-center">
+          </h5>
+          <div class="col-4 col-md-4 text-center mt-5">
             <img src="FOTO/email.png" style="width: 60px;" alt="">
             <p class="text-center fw-semibold" style="font-size: 13px;">ihsanakbar0810@gmail.com</p>
           </div>
-          <div class="col-4 col-md-4 text-center">
+          <div class="col-4 col-md-4 text-center mt-5">
             <img src="FOTO/linkedin.png" style="width: 40px;" alt="">
             <br>
             <a href="https://www.linkedin.com/in/muhammad-ihsan-akbar/
             " target="_blank" rel="noopener noreferrer" class="text-center fw-semibold" style="text-decoration: none; color: black;font-size: 13px;">Muhammad Ihsan Akbar</a>
           </div>
         </div>
-        
       </section>
 
-
-
-
-
+<!-- kalau mau diupdate isiannya dan ingin otomatis tercantum di website dan github gunakan kode berikut
+      git add .
+      git commit -m "bebas isi apa aja"
+      git push --set-upstream origin master
+-->
 
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.min.js" integrity="sha384-0pUGZvbkm6XF6gxjEnlmuGrJXVbNuzT9qBBavbLwCsOGabYfZo0T0to5eqruptLy" crossorigin="anonymous"></script>
