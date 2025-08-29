@@ -253,10 +253,33 @@ section{
     align-items: center; /* Pusatkan vertikal */
 }
 
-.work-header img {
-    width: 80px; /* Samakan ukuran logo */
+.logoCAHAYASAKINAH{
+    width: 60px;
     object-fit: contain;
 }
+
+
+
+.logoBVT{
+    width: 40px;
+    object-fit: contain;
+}
+
+.logoITSB{
+    width: 80px;
+    object-fit: contain;
+}
+
+.logobappeda{
+    width: 50px;
+    object-fit: contain;
+}
+
+
+/* .work-header img {
+    width: 80px; /* Samakan ukuran logo */
+    /* object-fit: contain; */
+/* } */
 
 .garisvertikal {
     width: 2px;
